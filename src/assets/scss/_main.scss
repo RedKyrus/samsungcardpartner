@@ -1,0 +1,148 @@
+.page-main{
+  .title-area{
+    .title-main{
+      color: $colorMainBlack;
+      font-size: 48px;
+      font-weight: 500;
+      
+    }
+    .title-sub{
+      color: #747474;
+      font-size: 26px;
+      margin-top: 20px;
+    }
+  }
+
+  .title-partner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title-logo{
+      margin-right: 25px;
+    }
+  }
+}
+
+.sect{
+  width: 100%;
+  text-align: center;
+  padding-top: 108px;
+  .sect-container{
+    width: $baseSectWithSize;
+    margin: 0 auto;
+  }
+}
+
+
+[class*="sect-ad"]{
+  padding-top: 0;
+}
+
+.sect-common-ad{
+  padding: 0;
+  .ad-link{
+    display: block;
+    &:not(:first-of-type){
+      margin-top: 17px;
+    }
+  }
+}
+
+.sect-release{
+  // background-color: #ECEAEF;
+  .sect-container{
+    width: $baseSectWithSizeSub;
+  }
+}
+.sect-special{
+  .sect-container{
+    width: $baseSectWithSizeSub;
+  }
+}
+
+.sect-youtube{
+  background-color: #ECEAEF;
+  padding-bottom: 84px;
+}
+
+.sect-partner{
+  padding-bottom: 84px;
+  .partner-list02{
+    margin-top: 74px;
+  }
+}
+
+.partner-list-cont{
+  margin-top: 70px;   
+}
+
+.youtube-contents{
+  margin-top: 50px;
+  
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  .youtube-area{
+    position: relative;
+    width: 48%;
+    //padding-top: 56.25%;
+    img{
+      width: 100%;
+    }
+    .youtube-box{
+      position: relative;
+      padding-top: 56.25%;
+      width: 100%;
+      //height: 56.25%;
+      border-radius: 16px;
+      overflow: hidden;
+      .youtube-frame{
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+  }
+  .youtube-text{
+    padding-top: 22px;
+    color: #747474;
+    font-size: 24px;
+  }
+  
+}
+.ytp-show-cards-title{
+  display: none !important;
+}
+ 
+
+.sect-ad-bottom{
+  cursor: pointer;
+  height: 268px;
+  background-image: url("../../img/main/ad_bottom.png"), linear-gradient(to right, #0eaad7 50%, #2a34b7 50%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: auto, auto;
+  .sect-container{
+    height: 100%;
+  }
+  .ad-bottom-area{
+    height: 100%;
+  }
+}
+
+
+
+.sect-intro{
+  //background: rgb(2,0,36);
+  background: linear-gradient(142deg, #0eaad7 0%, #1c45a9 45%, #231192 100%);
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+$introBottomSize: 10px;
+
+/*메인_인트로 부분*/
