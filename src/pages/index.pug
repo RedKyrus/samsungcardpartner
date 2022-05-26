@@ -211,12 +211,21 @@ block content
             img(src=`${imgPath}/main/partner_list01.png`, alt="파트너사" class="mobile-hidden")
           div.partner-list02 
             img(src=`${imgPath}/main/partner_list02.png`, alt="파트너사" class="mobile-hidden")
-        div
-          div 카톡
-          div 카이지 장기렌트카
+        div.consult-area
+          div.consult-box.consult-katalk
+            div.icon 
+              img(src=`${imgPath}/common/icon_circle_katalk.png`, alt="아이콘")
+            p.ment 카카오톡 상담 진행 중
+          div.consult-box.consult-tel
+            div.tel-title
+              div.icon
+                img(src=`${imgPath}/common/icon_consult.png`, alt="아이콘")
+              p.title 카이지 장기렌트카
+            p.tel-cont TEL: 1533-3753 
+              span (연중무휴상담신청)
+            
         
 
-  
 
   script(src="static/js/main.js")
   
