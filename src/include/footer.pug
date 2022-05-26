@@ -1,5 +1,5 @@
-mixin snsicon(altName, imgPath, ahref="#none")
-  li: a(href=ahref): img(src=imgPath alt="연결 "+altName)
+mixin snsicon(altName, imgPath, aHref="#none", aTarget="_self")
+  li: a(href=aHref target=aTarget): img(src=imgPath alt="연결 "+altName)
 
 
 
@@ -23,8 +23,7 @@ footer.footer
       ul.snsicon-ul
         +snsicon("카톡",`${imgPath}/common/icon_circle_katalk.png`)
         +snsicon("블로그",`${imgPath}/common/icon_circle_blog.png`)
-        +snsicon("유뷰브",`${imgPath}/common/icon_circle_youtube.png`)
+        +snsicon("유뷰브",`${imgPath}/common/icon_circle_youtube.png`, `https://www.youtube.com/channel/UC_LntEPC8s3h_QVESEuc1jQ`, `_blank`)
         +snsicon("인스타그램",`${imgPath}/common/icon_circle_instagram.png`)
-        
         
         

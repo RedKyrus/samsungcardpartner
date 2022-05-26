@@ -52,6 +52,7 @@ let onready = () =>{
   });
 
   swiperCommonSet(`.slide-cont-release`);
+  swiperCommonSet(`.slide-cont-special`);
 
   // window.addEventListener('resize', rearrangementSpecial)
 }

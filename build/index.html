@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--설명문 추가-->
-    <meta name="description" content="장기렌트카는 카이지에서 만나보세요~ 즉시출고 가격비교 등 다양한 혜택이 기다리고 있습니다.">
+    <meta name="description" content="장기렌트카는 삼성카드 제휴사몰에서 만나보세요~ 즉시출고 가격비교 등 다양한 혜택이 기다리고 있습니다.">
     <!--파비콘 추가-->
     <link rel="shortcut icon" href="http://file.careasy.co.kr/img/common/favicon.ico">
     <!--서치어드바이저-->
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <script src="static/js/lib/swiper_bundle.min.7.4.1.js">   </script>
     <script src="static/js/custom_naver_log.js"></script>
-    <title>장기렌트카 카이지</title>
+    <title>장기렌트카 삼성카드제휴사몰</title>
   </head>
   <body class="body">
     <div class="wrap">
@@ -56,7 +56,7 @@
               <div class="search-rank open-rank-target">
                 <div class="rank-box">
                   <div class="icon-triangle"></div>
-                  <button class="btn-close-rank" type="button"> </button>
+                  <button class="btn-close-rank" type="button"></button>
                   <p class="top-ment">인기검색</p>
                   <ul class="rank-ul">
                           <li><a href="http://www.careasy.co.kr/search?search_text=스포티지">1. 스포티지</a></li>
@@ -77,7 +77,7 @@
               <li><a href="intro/intro.html">삼성카드 제휴사몰!</a></li>
               <li><a href="index.html" data-scroll-target="release">즉시출고차량</a></li>
               <li><a href="index.html" data-scroll-target="special">이달의 특가차량</a></li>
-              <li><a href="https://www.youtube.com/channel/UC_LntEPC8s3h_QVESEuc1jQ" target="_blank">유튜브 리뷰</a></li>
+              <li><a href="index.html" data-scroll-target="youtube">유튜브 리뷰</a></li>
             </ul>
           </nav>
           <div class="btn-box-branch">
@@ -189,7 +189,7 @@
             <div class="title-area" data-scroll-id="special">
               <p class="title-main">원하는 차량 이벤트가로 구매해보세요!</p>
             </div>
-            <div class="slide-cont slide-cont-release car-info-style-black">
+            <div class="slide-cont slide-cont-special car-info-style-black">
               <div class="slide-area">
                 <div class="swiper">
                   <div class="swiper-wrapper car-info-area"><a class="swiper-slide info-box" href="#none">
@@ -334,17 +334,28 @@
         <section class="sect sect-youtube">
           <div class="sect-container">
             <div class="title-area title-youtube">
-              <p class="title-main"><img src="img/main/title_youtube.png" alt="유튜브 제목"></p>
+              <p class="title-main" data-scroll-id="youtube">YouTube 리뷰</p>
               <p class="title-sub">유튜브 채널에서 영상을 통해 다양한 정보를 만나보세요.</p>
+            </div>
+            <div class="youtube-intro"> 
+              <div class="youtube-area-main">
+                <div class="youtube-box"><iframe class="youtube-frame" src="https://www.youtube.com/embed/Hhe64iaiRzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              </div>
+              <div class="youtube-area-text"> 
+                <p class="txt-main">이달의 유튜브</p>
+                <div class="txt-sub">
+                  <p>삼성카드 스타리아 장기렌트 가격 </p>
+                  <p>법인차량 리스 상품 알아보기</p>
+                </div><a class="btn-go-youtube" href="https://www.youtube.com/channel/UC_LntEPC8s3h_QVESEuc1jQ" target="_black"> 
+                  <p class="icon-triangle">에이치오토 유튜브 바로가기</p></a>
+              </div>
             </div>
             <div class="youtube-contents">
               <div class="youtube-area">
-                <!--img(src=`${imgPath}/main/youtube_img01.png`, alt="이미지")-->
                 <div class="youtube-box"><iframe class="youtube-frame" src="https://www.youtube.com/embed/vVfwptqRp_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 <p class="youtube-text">카니발 구매 영상</p>
               </div>
               <div class="youtube-area mobile-hidden">
-                <!--img(src=`${imgPath}/main/youtube_img02.png`, alt="이미지")-->
                 <div class="youtube-box"><iframe class="youtube-frame" src="https://www.youtube.com/embed/bQ8M6TaL5oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 <p class="youtube-text">렌터카 차량 인수영상</p>
               </div>
@@ -543,10 +554,10 @@
           </div>
           <div class="footer-snsicon-cont">
             <ul class="snsicon-ul">
-                    <li><a href="#none"><img src="img/common/icon_circle_katalk.png" alt="연결 카톡"></a></li>
-                    <li><a href="#none"><img src="img/common/icon_circle_blog.png" alt="연결 블로그"></a></li>
-                    <li><a href="#none"><img src="img/common/icon_circle_youtube.png" alt="연결 유뷰브"></a></li>
-                    <li><a href="#none"><img src="img/common/icon_circle_instagram.png" alt="연결 인스타그램"></a></li>
+                    <li><a href="#none" target="_self"><img src="img/common/icon_circle_katalk.png" alt="연결 카톡"></a></li>
+                    <li><a href="#none" target="_self"><img src="img/common/icon_circle_blog.png" alt="연결 블로그"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC_LntEPC8s3h_QVESEuc1jQ" target="_blank"><img src="img/common/icon_circle_youtube.png" alt="연결 유뷰브"></a></li>
+                    <li><a href="#none" target="_self"><img src="img/common/icon_circle_instagram.png" alt="연결 인스타그램"></a></li>
             </ul>
           </div>
         </div>

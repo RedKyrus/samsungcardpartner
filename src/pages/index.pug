@@ -144,7 +144,7 @@ block content
         +titleMainSubAndScrollID("원하는 차량 이벤트가로 구매해보세요!", "special")  
 
         //- 슬라이드부분(상위 클래스이름, 클래스 스타일 이름, 슬라이드상자형식(함수이름))
-        +slideArea("slide-cont-release" , "car-info-style-black", "slideListSpecial")
+        +slideArea("slide-cont-special" , "car-info-style-black", "slideListSpecial")
         
 
     section(class="sect sect-common-ad")
@@ -157,19 +157,28 @@ block content
     section(class="sect sect-youtube")
       div(class="sect-container")
         div(class="title-area title-youtube")
-          p(class="title-main")
-            img(src=`${imgPath}/main/title_youtube.png`, alt="유튜브 제목")
+          p(class="title-main" data-scroll-id="youtube") YouTube 리뷰
           p(class="title-sub") 유튜브 채널에서 영상을 통해 다양한 정보를 만나보세요.
+
+        div.youtube-intro 
+          div.youtube-area-main
+            div.youtube-box
+              <iframe class="youtube-frame" src="https://www.youtube.com/embed/Hhe64iaiRzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          div.youtube-area-text  
+            p.txt-main 이달의 유튜브
+            div.txt-sub
+              p 삼성카드 스타리아 장기렌트 가격 
+              p 법인차량 리스 상품 알아보기
+            a(class="btn-go-youtube" href=`https://www.youtube.com/channel/UC_LntEPC8s3h_QVESEuc1jQ` target="_black") 
+              p.icon-triangle 에이치오토 유튜브 바로가기
+        
         div(class="youtube-contents")
           div(class="youtube-area")
-            //img(src=`${imgPath}/main/youtube_img01.png`, alt="이미지")
             div(class="youtube-box")
               <iframe class="youtube-frame" src="https://www.youtube.com/embed/vVfwptqRp_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
             p(class="youtube-text") 카니발 구매 영상
             
           div(class="youtube-area mobile-hidden")
-            //img(src=`${imgPath}/main/youtube_img02.png`, alt="이미지")
             div(class="youtube-box")
               <iframe class="youtube-frame" src="https://www.youtube.com/embed/bQ8M6TaL5oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             

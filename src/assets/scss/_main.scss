@@ -12,6 +12,12 @@
       margin-top: 20px;
     }
   }
+  .title-youtube{
+    .title-main{
+      color: #c60000;
+      font-size: 72px;
+    }
+  }
 
   .title-partner{
     display: flex;
@@ -61,8 +67,9 @@
 }
 
 .sect-youtube{
-  background-color: #ECEAEF;
+  background-color: #fef2e8;
   padding-bottom: 84px;
+  padding-top: 74px;
 }
 
 .sect-partner{
@@ -76,8 +83,96 @@
   margin-top: 70px;   
 }
 
-.youtube-contents{
+.youtube-intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-top: 50px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid #d3d3d3;
+  .youtube-area-main{
+    position: relative;
+    width: 60%;
+    //padding-top: 56.25%;
+    .youtube-box{
+      position: relative;
+      padding-top: 56.25%;
+      width: 100%;
+      //height: 56.25%;
+      border-radius: 16px;
+      overflow: hidden;
+      .youtube-frame{
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+  }
+  .youtube-area-text{
+    width: 36%;
+    p{
+      text-align: left;
+    }
+    .txt-main{
+      font-size: 35px;
+      font-weight: 500;
+    }
+    .txt-sub{
+      
+      margin-top: 18px;
+      p{
+        line-height: 1.42;
+        color: #747474;
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+
+  }
+
+  .btn-go-youtube{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border:  1px solid #c60000;
+    border-radius: 32px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    margin-top: 48px;
+
+    color: #c60000;
+    font-size: 23px;
+    font-weight: 500;
+    
+
+    .icon-triangle{
+      position: relative;
+      padding-right: 10px;
+      &::after{
+        margin-left: 10px;
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0px;
+        height: 0px;
+        border-left: 12px solid #c60000;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+      }
+    }
+  }
+}
+
+
+.youtube-contents{
+  margin-top: 46px;
   
   border-radius: 20px;
   display: flex;
