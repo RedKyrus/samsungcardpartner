@@ -1,12 +1,16 @@
 extends ../template/layout
 
 //-함수들
+mixin titleMain(titleMain,titleClassName="")
+  div(class=`title-area ${titleClassName}`)
+    p.title-main= titleMain
+  
 mixin titleMainSub(titleMain, titleSub)
   .title-area
     p.title-main= titleMain
     p.title-sub= titleSub
 
-mixin titleMainSubAndScrollID(titleMain, scrollID)
+mixin titleMainAndScrollID(titleMain, scrollID)
   .title-area(data-scroll-id=scrollID)
     p.title-main= titleMain
     //- p.title-sub= titleSub
@@ -91,8 +95,8 @@ mixin SpecialInfobox(num, carName, price01=0, price02=0, price03=0)
       button(type="button" class="btn-quote") 견적신청하기
 
     
-mixin slideArea(classMainName, classStyleName, slideListFormatFun)
-  div(class=`slide-cont ${classMainName} ${classStyleName}`)
+mixin slideArea(classMainName, slideListFormatFun)
+  div(class=`slide-cont ${classMainName}`)
     div(class="slide-area")
       div(class="swiper")
         div(class="swiper-wrapper car-info-area")
@@ -124,14 +128,28 @@ block content
     section(class="sect sect-intro")
       div(class="sect-container")
         div(class="intro-content")        
-          
-      
-    section(class="sect sect-release" )
+
+    section(class="sect sect-in-info")      
       div(class="sect-container")
-        +titleMainSubAndScrollID("기다리지 않고 계약 즉시 받을 수 있는 차!", "release")  
+        +titleMain("렌트카 견적은 삼성카드 제휴사몰에서~!", "title-in-info")
+        form.in-info-content
+          div.in-info-area
+            +inputText("이        름","in-name")
+            +inputTel("연  락  처","in-phone" )
+            +inputText("관심차종 1", "in-carype in-cartype01")
+            +inputText("관심차종 2", "in-cartype02")
+            +inputText("관심차종 3", "in-cartype03")
+
+          button(class="btn-quote fn-open-modal-complete" type="button")
+            p 견적
+            p 요청하기
+      
+    section(class="sect sect-release")
+      div(class="sect-container")
+        +titleMainAndScrollID("기다리지 않고 계약 즉시 받을 수 있는 차!", "release")  
 
         //- 슬라이드부분(상위 클래스이름, 클래스 스타일 이름, 슬라이드상자형식(함수이름))
-        +slideArea("slide-cont-release" , "car-info-style-black", "slideListRelease02")
+        +slideArea("slide-cont-release" , "slideListRelease02")
 
 
     section(class="sect sect-common-ad")
@@ -141,10 +159,10 @@ block content
 
     section(class="sect sect-special" )
       div(class="sect-container")
-        +titleMainSubAndScrollID("원하는 차량 이벤트가로 구매해보세요!", "special")  
+        +titleMainAndScrollID("원하는 차량 이벤트가로 구매해보세요!", "special")  
 
         //- 슬라이드부분(상위 클래스이름, 클래스 스타일 이름, 슬라이드상자형식(함수이름))
-        +slideArea("slide-cont-special" , "car-info-style-black", "slideListSpecial")
+        +slideArea("slide-cont-special" , "slideListSpecial")
         
 
     section(class="sect sect-common-ad")
@@ -187,8 +205,7 @@ block content
 
     section(class="sect sect-partner")
       div(class="sect-container")
-        div(class="title-area title-partner")
-          p(class="title-main") 공식파트너
+        +titleMain("공식파트너","title-partner")
         div(class="partner-list-cont")
           div.partner-list01
             img(src=`${imgPath}/main/partner_list01.png`, alt="파트너사" class="mobile-hidden")

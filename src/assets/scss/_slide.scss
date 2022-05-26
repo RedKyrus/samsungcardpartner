@@ -56,7 +56,7 @@
     background-color: #ececec;
     border-radius: 10px;
     padding-top: 32px;
-    padding-bottom: 20px;
+    padding-bottom: 26px;
     border:2px solid #d7d7d7;
     position: relative;
 
@@ -119,10 +119,11 @@
           justify-content: space-between;
           align-items: center;
           padding: 5px 0;
-          
+          p{
+            color: $colorMainBlue;
+          }
           .p-type{
             font-size: 20px;
-            color: #4c4c4c;
             font-weight: 500;
           }
           .p-price{
@@ -134,21 +135,10 @@
       }
       
 
-
-      // .car-deposit{
-      //   margin-top: 8px;
-      //   font-size: 20px;
-      //   font-weight: 500;
-      // }
-      // .car-price{
-      //   margin-top: 1px;
-      //   font-size: 32px;
-      //   font-weight: 600;
-      // }
       .car-tip{
         margin-top: 6px;
         font-size: 16px;
-        text-align: center;
+        text-align: left;
       }
     }
 
