@@ -123,13 +123,19 @@
             color: $colorMainBlue;
           }
           .p-type{
+            font-family: 'NanumSquare', sans-serf;
             font-size: 20px;
             font-weight: 500;
           }
           .p-price{
-            font-family: 'Nanum Gothic', sans-serif;
-            font-size: 25px;
+            font-family: "Montserrat",sans-serif;
+            font-size: 35px;
             font-weight: 700;
+            .won{
+              font-family: 'NanumSquare', sans-serf;
+              font-weight: 500;
+              font-size: 24px;
+            }
           }
         }
       }

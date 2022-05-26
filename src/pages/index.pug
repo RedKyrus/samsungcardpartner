@@ -84,13 +84,16 @@ mixin SpecialInfobox(num, carName, price01=0, price02=0, price03=0)
       ul.car-price-ul
         li.price-advance
           p.p-type 선수금 30%
-          p.p-price #{price01.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}원
+          p.p-price #{price01.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}
+            span.won 원
         li.price-deposit
           p.p-type 보증금 30%
-          p.p-price #{price02.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}원
+          p.p-price #{price02.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}
+            span.won 원
         li.price-normal
           p.p-type 무보증
-          p.p-price #{price03.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}원
+          p.p-price #{price03.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}
+            span.won 원
       p.car-tip (세금/보험료 포함)
       button(type="button" class="btn-quote") 견적신청하기
 
