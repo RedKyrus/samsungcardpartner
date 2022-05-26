@@ -97,10 +97,11 @@
           color: $colorMainBlue;
           font-size: 21px;
           font-weight: 500;
-          margin-top: 20px;
+          margin-top: 10px;
           .span-point{
+            font-family: "Montserrat",sans-serif;
             font-size: 42px;
-            font-weight: 600;
+            font-weight: 700;
           }
         }
         .p-tip{
@@ -164,62 +165,6 @@
     }
   }
 }
-
-//스타일 퍼플
-.car-info-style-purple{
-  
-  .slide-btn{
-    img{
-      //filter: invert(98%) sepia(14%) saturate(7372%) hue-rotate(171deg) brightness(87%) contrast(91%);
-      // filter: invert(81%) sepia(49%) saturate(5162%) hue-rotate(216deg) brightness(90%) contrast(82%);
-      filter: invert(53%) sepia(28%) saturate(5816%) hue-rotate(221deg) brightness(94%) contrast(86%);
-    }
-  }
-
-
-  .slide-pagination{
-    .swiper-pagination-bullet{
-      background-color: #bd9fdf;
-    }
-    .swiper-pagination-bullet-active{
-      background-color: #5b1e8f;
-    }
-  }
-
-
-  .info-box{
-    border:1px solid #b18bd1;
-    .car-top{
-      .car-num{
-        color: #9183e8;
-      }
-      .car-deposit{
-        color: #4c4c4c;
-      }
-    }
-    .car-info{
-      .car-price-ul{
-       
-        li{
-          &:not(:last-of-type){
-            border-bottom: 1px solid #b18bd1;
-          }
-        }
-      }
-      .p-price{
-        color: #533ed2;
-      }
-    }
-  }
-
-  
-  .btn-quote{
-    color: #272b6e;
-    background-color: #daeffb;
-  }
-}
-
-
 
 
 .car-info-style-black{
