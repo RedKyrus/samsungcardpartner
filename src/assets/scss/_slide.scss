@@ -1,3 +1,97 @@
+/*인트로 슬라이드 부분*/
+.intro-slide-cont{
+  position: relative;
+  width: 100%;
+  .intro-slide-area{
+    position: relative;
+  }
+  .intro-slide-pagination{
+    pointer-events: none;
+    position: absolute;
+    width: $baseSectWithSizeSub;
+    margin: 0 auto;
+    z-index: 5;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    // left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-50%);
+    .slide-btn{
+      pointer-events: auto;
+      cursor: pointer;
+      filter: invert(100%);
+    }
+    .slide-btn-next{
+      transform: scale(-1);
+    }
+  }
+}
+
+.intro-slide-ul{
+    li{
+      width: 10px;
+      margin: 0 auto;
+      position: relative;
+      // align-items: center;  
+    }
+
+    .bg-area{
+      // width: $baseSectWithSize;
+      // overflow: hidden;
+      // width: $sBaseMaxSize;
+    }
+    .cont-area{
+      width: $baseSectWithSize;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: left;
+      padding-top: 60px;
+      .title-sub{
+        font-size: 20px;
+      }
+      .title-main{
+        margin-top: 26px;
+        p{
+          font-size: 52px;
+          font-weight: 500;
+        }
+        .title02{
+          margin-top: 16px;
+        }
+      }
+      .date{
+        font-size: 20px;
+        margin-top: 24px;
+      }
+
+      .btn-read-more{
+        display: flex;
+        margin-top: 48px;
+        font-size: 17px;
+        border-radius: 10px;
+        height: 55px;
+        width: 188px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #333;
+      }
+
+      .add-tip{
+        margin-top: 30px;
+        font-size: 17px;
+      }
+
+    }
+  }
+
+
+
+
 
 /*슬라이드 부분*/
 .slide-cont{
@@ -75,14 +169,22 @@
 
     .img-area{
       margin-top: 10px;
+      padding: 10px 0;
       img{
         width: 100%;
       }
     }
+
+    .bg-white-box{
+      background-color: #fff;
+      border-radius: 10px;
+      
+    }
+    
     .car-info{
       text-align: left;
       .car-price-box{
-        margin-top: 15px;
+        margin-top: 6px;
         background-color: #fff;
         border-radius: 10px;
         padding-top: 16px;
@@ -113,28 +215,31 @@
       
 
       .car-price-ul{
-        margin-top: 14px;
+        margin-top: 24px;
         li{
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 5px 0;
+          padding: 2px 0;
           p{
             color: $colorMainBlue;
           }
           .p-type{
             font-family: 'NanumSquare', sans-serf;
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 600;
+            letter-spacing: -1.7px;
           }
           .p-price{
-            font-family: "Montserrat",sans-serif;
-            font-size: 35px;
+            font-family: "GmarketSans",sans-serif;
+            font-size: 33px;
             font-weight: 700;
+            // letter-spacing: -2px;
             .won{
               font-family: 'NanumSquare', sans-serf;
               font-weight: 500;
-              font-size: 24px;
+              font-size: 22px;
+              margin-left: 2px;
             }
           }
         }

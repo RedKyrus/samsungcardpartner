@@ -1,52 +1,53 @@
 let onready = () =>{
 
-  const slideIntroPath =".slide-intro "
-  
-  // const slideSpecialPath =".slide-cont-special "
-  const slideCommonClassName = ".slide-common"
+  const slideIntroClassName =".intro-slide-cont "
+  // const swiper = new Swiper(".mySwiper", {});
 
-
-  const swiperIntro = new Swiper(slideIntroPath+'.swiper', {
+  const swiperIntro = new Swiper(slideIntroClassName+'.swiper', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    autoplay: false,
-    allowTouchMove: false,
+    // slidesPerView: 1,
+    // slidesPerGroup: 1,
+    // autoplay: false,
+    allowTouchMove: true,
     // autoplay: {
     //   delay: 5000,
     //   disableOnInteraction: false,
     // },
-    // // If we need pagination
-    pagination: {
-      el: slideIntroPath+'.slide-pagination',
-      clickable: true,
+    // If we need pagination
+    // pagination: {
+    //   el: slideIntroPath+'.slide-pagination',
+    //   clickable: true,
       
+    // },
+    navigation: {
+      nextEl: slideIntroClassName+' .slide-btn-next',
+      prevEl: slideIntroClassName+' .slide-btn-prev',
     },
 
-    grabCursor: true,
-    effect: "creative",
-    creativeEffect: {
-      prev: {
-        shadow: true,
-        translate: [0, 0, -800],
-        rotate: [180, 0, 0],
-      },
-      next: {
-        shadow: true,
-        translate: [0, 0, -800],
-        rotate: [-180, 0, 0],
-      },
-    },
+    // grabCursor: true,
+    // effect: "creative",
+    // creativeEffect: {
+    //   prev: {
+    //     shadow: true,
+    //     translate: [0, 0, -800],
+    //     rotate: [180, 0, 0],
+    //   },
+    //   next: {
+    //     shadow: true,
+    //     translate: [0, 0, -800],
+    //     rotate: [-180, 0, 0],
+    //   },
+    // },
   
 
-    breakpoints: {
-      901:{
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-      }
-    }
+    // breakpoints: {
+    //   901:{
+    //     slidesPerView: 1,
+    //     slidesPerGroup: 1,
+    //   }
+    // }
   
   
   });

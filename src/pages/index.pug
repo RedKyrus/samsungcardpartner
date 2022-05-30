@@ -79,7 +79,7 @@ mixin SpecialInfobox(num, carName, price01=0, price02=0, price03=0)
     
     p.car-top-icon: img(src=`${imgPath}/main/icon_special.png`, alt="아이콘")
     p.car-name #{carName}
-    div.img-area: img(src=`${imgPath}/car/car_relese${num}.png`, alt="자동차이미지")
+    div.img-area.bg-white-box: img(src=`${imgPath}/car/car_relese${num}.png`, alt="자동차이미지")
     div.car-info
       ul.car-price-ul
         li.price-advance
@@ -130,7 +130,7 @@ block content
   main(class="wrap-container page-main")
     section(class="sect sect-intro")
       div(class="sect-container")
-        div(class="intro-content")        
+          include ./_main_intro_slide_cont
 
     section(class="sect sect-in-info")      
       div(class="sect-container")
