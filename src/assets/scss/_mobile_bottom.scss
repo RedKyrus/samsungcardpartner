@@ -20,7 +20,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: toRem(318);
+      // width: toRem(318);
       p{
         padding-top: toRem(8);
         font-family: 'GmarketSans', sans-serif;//기본굵기 400
@@ -33,7 +33,7 @@
       margin-right: toRem(16);
     }
     .btn-tel{
-      width: toRem(114);
+      width: 24%;
       background-color: #66bb24;
       color: #9f2492;
       position: relative;
@@ -62,18 +62,10 @@
       }
       
     }
-    .btn-katalk{
-      background-color: #ffd459;
-      color: #000;
-      .icon-area{
-        img{
-          width: toRem(94);
-        }
-      }
-    }
     .btn-quote{
       background-color: #4c0685;
       color: #fff;
+      width: 76%;
       .icon-area{
         img{
           width: toRem(62);

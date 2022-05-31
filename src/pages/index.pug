@@ -1,18 +1,22 @@
 extends ../template/layout
 
 //-함수들
-mixin titleMain(titleMain,titleClassName="")
+mixin titleMain(titleMain01, titleMain02, titleClassName="")
   div(class=`title-area ${titleClassName}`)
-    p.title-main= titleMain
+    p.title-main
+      span=titleMain01
+      span=titleMain02
   
 mixin titleMainSub(titleMain, titleSub)
   .title-area
     p.title-main= titleMain
     p.title-sub= titleSub
 
-mixin titleMainAndScrollID(titleMain, scrollID)
+mixin titleMainAndScrollID(titleMain01, titleMain02, scrollID)
   .title-area(data-scroll-id=scrollID)
-    p.title-main= titleMain
+    p.title-main
+      span=titleMain01
+      span=titleMain02
     //- p.title-sub= titleSub
 
 mixin inputText(plaName, className)
@@ -134,7 +138,7 @@ block content
 
     section(class="sect sect-in-info")      
       div(class="sect-container")
-        +titleMain("렌트카 견적은 삼성카드 제휴사몰에서~!", "title-in-info")
+        +titleMain(`렌트카 견적은`,`삼성카드 제휴사몰에서~!`, "title-in-info")
         form.in-info-content
           div.in-info-area
             +inputText("이        름","in-name")
@@ -149,7 +153,7 @@ block content
       
     section(class="sect sect-release")
       div(class="sect-container")
-        +titleMainAndScrollID("기다리지 않고 계약 즉시 받을 수 있는 차!", "release")  
+        +titleMainAndScrollID(`기다리지 않고`, `즉시 받을 수 있는 차!`, "release")  
 
         //- 슬라이드부분(상위 클래스이름, 클래스 스타일 이름, 슬라이드상자형식(함수이름))
         +slideArea("slide-cont-release" , "slideListRelease02")
@@ -162,7 +166,7 @@ block content
 
     section(class="sect sect-special" )
       div(class="sect-container")
-        +titleMainAndScrollID("원하는 차량 이벤트가로 구매해보세요!", "special")  
+        +titleMainAndScrollID(`원하는 차량`, `이벤트가로 구매해보세요!`, "special")  
 
         //- 슬라이드부분(상위 클래스이름, 클래스 스타일 이름, 슬라이드상자형식(함수이름))
         +slideArea("slide-cont-special" , "slideListSpecial")
@@ -208,14 +212,14 @@ block content
 
     section(class="sect sect-partner")
       div(class="sect-container")
-        +titleMain("공식파트너","title-partner")
+        +titleMain("공식파트너","","title-partner")
         div(class="partner-list-cont")
           div.partner-list01
-            img(src=`${imgPath}/main/partner_list01.png`, alt="파트너사" class="mobile-hidden")
+            img(src=`${imgPath}/main/partner_list01.png`, alt="파트너사")
           div.partner-list02 
-            img(src=`${imgPath}/main/partner_list02.png`, alt="파트너사" class="mobile-hidden")
+            img(src=`${imgPath}/main/partner_list02.png`, alt="파트너사")
         div.consult-area
-          div.consult-box.consult-katalk
+          div.consult-box.consult-katalk.mobile-hidden
             div.icon 
               img(src=`${imgPath}/common/icon_circle_katalk.png`, alt="아이콘")
             p.ment 카카오톡 상담 진행 중

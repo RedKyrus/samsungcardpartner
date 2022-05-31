@@ -37,10 +37,6 @@
     }
   }
 
-
-  .footer-logo{
-   
-  }
 }
 
 .footer-info{
@@ -115,13 +111,15 @@
       padding-top: toRem(36);
       padding-bottom: toRem(26);
       .footer-menu-ul{
+        padding-bottom: toRem(36);
+        justify-content: center;
         li{
           padding: 0 toRem(50);
           &:not(:last-of-type){
           }
           *{
             color: #696969;
-            font-size: toRem(30);
+            font-size: toRem(32);
           }
         }
       }
@@ -138,15 +136,20 @@
   }
   
   .footer-info{
-    margin-top: toRem(42);
+    margin-top: toRem(24);
+    flex-direction: column;
   }
   
   .copy-text-cont{
+    padding-left: toRem(34);
     p{
       font-size: toRem(22);
     }
     .copyright{
       margin-top: toRem(14);
+    }
+    .company{
+      font-size: toRem(28);
     }
   }
   

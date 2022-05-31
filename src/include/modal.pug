@@ -33,6 +33,7 @@ mixin inputTel(plaName, className)
 //모달-동의서
 +modalFrame("agree")
   div.agree-textarea-wrap
+    p.p-title 정책 및 약관
     div.textarea-cont
       pre(class="agree-textarea-pre")
         span.tit 개인정보 활용정책 내용
@@ -50,11 +51,12 @@ mixin inputTel(plaName, className)
         span.h 3. 개인정보의 보유 및 이용기간
         |    가. 이용자가 제공하는 개인정보는 최종 상담일로부터 1년후 더 이상의 상담이 이뤄지지 않으면 파기합니다.
         |    나. 이용자가 개인정보의 파기를 요청하는 경우 해당 이용자의 개인정보를 파기합니다.
-    button.fn-close-modal.btn-close 닫기
+    button.fn-close-modal.btn-close 확인
 
 //모달-이용방침
 +modalFrame("terms")
   div.agree-textarea-wrap
+    p.p-title 정책 및 약관
     div.textarea-cont
       pre(class="agree-textarea-pre")
         span.tit 이용약관
@@ -70,7 +72,7 @@ mixin inputTel(plaName, className)
         br
         span.h [회원 이용 범위]
         |    카이지 홈페이지에 접속하여 이 약관에 동의하고, 회원이 카이지 홈페이지에 연계된 주요 홈페이지의 이용을 원할 경우 홈페이지의 이용여부를 승낙하는 것만으로 별도의 가입없이 해당 홈페이지를 이용할 수 있습니다.
-    button.fn-close-modal.btn-close 닫기
+    button.fn-close-modal.btn-close 확인
 
 //완료
 +modalFrame("complete")

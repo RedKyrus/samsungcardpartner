@@ -273,8 +273,11 @@ $searchBorderR: 40px;
         //border-right: 1px solid #fff;
         border-right: none;
       }
-      &:last-of-type::after{
-        content: none;
+      &:last-of-type{
+        padding-right: 0;
+        &::after{
+          content: none;
+        }
       }
       &:first-of-type{
         padding-left: 0;
@@ -304,10 +307,12 @@ $searchBorderR: 40px;
     padding-bottom: toRem(40);
 
     .header-top{
+      padding-bottom: toRem(36);
       .top-content{
         width: 100%;
         padding: 0 toRem(38);
         padding-top: toRem(38);
+        flex-direction: column;
       }
     }
     
@@ -322,8 +327,9 @@ $searchBorderR: 40px;
   
 
   .search-area{
+    margin-top: toRem(30);
     padding-right: 0;
-    width: 66%;
+    width: 96%;
     .search-bar{
       width: auto;
       height: toRem(80);
@@ -377,17 +383,17 @@ $searchBorderR: 40px;
       width: toRem(140);
     }
     .logo-txt{
-      color: #fff;
-      text-align: left;
+      text-align: center;
+      
       .logo-txt-main{
 
-        font-size: toRem(20);
+        font-size: toRem(56);
 
       }
       .logo-txt-sub{
 
-        font-size: toRem(17);
-        margin-top: toRem(4);
+        font-size: toRem(42);
+        margin-top: toRem(14);
 
       }
     }
@@ -414,7 +420,7 @@ $searchBorderR: 40px;
           content: none;
         }
         a{
-          font-size: toRem(30);
+          font-size: toRem(26);
         }
       }
     }

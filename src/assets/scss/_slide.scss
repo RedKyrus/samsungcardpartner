@@ -62,9 +62,10 @@
     }
 
     .bg-area{
-      // width: $baseSectWithSize;
-      // overflow: hidden;
-      // width: $sBaseMaxSize;
+      img{
+        max-width: fit-content;
+        width: 100%;
+      }
     }
     .cont-area{
       width: $baseSectWithSize;
@@ -110,7 +111,7 @@
       }
 
     }
-  }
+}
 
 
 
@@ -303,6 +304,79 @@
 }
 
 
+
+
+  /*인트로 슬라이드 부분*/
+@media (max-width:$mobileBaseMaxSize){
+  .intro-slide-cont{
+    
+    .intro-slide-area{
+      position: relative;
+    }
+    .intro-slide-navigation{
+      display: none;
+      .slide-btn{
+      
+      }
+      .slide-btn-next{
+      
+      }
+    }
+    .intro-slide-pagination{
+      display: none;
+    }
+
+  }
+
+  .intro-slide-ul{
+      li{
+        width: toRem(10);
+        
+      }
+
+      .bg-area{
+        
+      }
+      .cont-area{
+        padding-left: toRem(30);
+        width: 100%;
+        padding-top: toRem(36);
+        .title-sub{
+          font-size: toRem(20);
+        }
+        .title-main{
+          margin-top: toRem(24);
+          p{
+            font-size: toRem(40);
+          }
+          .title02{
+            margin-top: toRem(8);
+          }
+        }
+        .date{
+          font-size: toRem(20);
+          margin-top: toRem(20);
+        }
+
+        .btn-read-more{
+          margin-top: toRem(30);
+          font-size: toRem(17);
+          border-radius: toRem(10);
+          height: toRem(52);
+          width: toRem(188);
+        }
+
+        .add-tip{
+          margin-top: toRem(32);
+          font-size: toRem(18);
+        }
+
+      }
+  }
+}
+
+
+
 @media (max-width:$mobileBaseMaxSize){
   .slide-cont{
     margin-top: toRem(56);
@@ -318,6 +392,10 @@
         height: toRem(20);
         margin: 0 8px !important;
       }
+    }
+
+    .slide-btn{
+      display: none;
     }
   }
   
