@@ -114,7 +114,7 @@ const webserver = ()=>
 const bSyncInfo = () =>{
     return bSync.init({
         watch:true,
-        port: 3030,
+        port: 3040,
         startPath: "/",
         //notify: false,
         server: {

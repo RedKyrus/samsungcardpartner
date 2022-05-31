@@ -16,11 +16,11 @@ let onready = () =>{
     //   disableOnInteraction: false,
     // },
     // If we need pagination
-    // pagination: {
-    //   el: slideIntroPath+'.slide-pagination',
-    //   clickable: true,
+    pagination: {
+      el: slideIntroClassName+'.slide-pagination-area',
+      clickable: true,
       
-    // },
+    },
     navigation: {
       nextEl: slideIntroClassName+' .slide-btn-next',
       prevEl: slideIntroClassName+' .slide-btn-prev',

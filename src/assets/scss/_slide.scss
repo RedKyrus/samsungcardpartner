@@ -5,11 +5,11 @@
   .intro-slide-area{
     position: relative;
   }
-  .intro-slide-pagination{
+  .intro-slide-navigation{
     pointer-events: none;
     position: absolute;
     width: $baseSectWithSizeSub;
-    margin: 0 auto;
+    // margin: 0 auto;
     z-index: 5;
     height: 100%;
     top: 0;
@@ -27,6 +27,29 @@
     .slide-btn-next{
       transform: scale(-1);
     }
+  }
+  .intro-slide-pagination{
+    position: absolute;
+    bottom: 24px;
+    // width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    // width: 100%;
+    .slide-pagination-area{
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-pagination-bullet{
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    width: 8px;
+    height: 8px;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #fff;
+    width: 40px;
+    border-radius: 4px;
   }
 }
 

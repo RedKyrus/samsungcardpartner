@@ -152,13 +152,119 @@
   .in-info-content-modal{
     position: relative;
     margin: 0 auto;
+    background-color: #fff;
     width: 380px;
-    // height: 500px;
-    //padding-top: 12px;
+    // box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.3);
     border-radius: 26px;
+    padding:0 28px;
+    padding-top:38px;
+    padding-bottom: 27px;
+  
     .info-title{
       font-size: 32px;
       text-align: center;
+      letter-spacing: -1.4px;
+      font-weight: 500;
+    }
+    
+    .in-info-area{
+      display: flex;
+      flex-wrap: wrap;
+      //width: 290px;
+      margin-top: 26px;
+      input{
+        width: 100%;
+        height: 46px;
+        margin-bottom: 8px;
+        background-color: #daeffb;
+        border-radius: 8px;
+        padding-left: 18px;
+  
+        color: #222;
+        font-size: 20px;
+        //letter-spacing: -0.2px;
+  
+        &::placeholder{
+          color: #736276;
+          letter-spacing: -1px;
+        }
+  
+        &:first-of-type{
+          
+        }
+  
+        &:last-of-type{
+          margin-bottom: 22px;
+        }
+      }
+    }
+  
+    .agree-area{
+      text-align: left;
+      display: flex;
+      align-items: center;
+      .check-agree{
+        display: none;
+        position: relative;
+        &:checked+.check-agree-label::before{
+          content: "✔";
+          justify-content: center;
+          background-color: #427abf;
+          color: #fff;
+        }
+      }
+      .check-agree-label{
+        padding-top: 1px;
+        user-select: none;
+        position: relative;
+        //display: inline-block;
+        color: #6c6c6c;
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        
+        &::before{
+          content: "";
+          vertical-align: top;
+          margin-right: 6px;
+          //position: absolute;
+          top: -1px;
+          display: flex;
+          //display: inline-block;
+          position: relative;
+          background-color: #b2b2b2;
+          width: 24px;
+          height: 24px;
+        }
+      }
+  
+      .btn-show{
+        margin-left: 10px;
+        background-color: #848484;
+        width: 58px;
+        height: 26px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        padding-top: 2px;
+        border-radius: 10px;
+      }
+    }
+  
+    .btn-car-quote{
+      background-color: #4e39d1;
+      width: 100%;
+      height: 48px;
+      border-radius: 24px;
+      color: #fff;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 10px;
+      margin-top: 18px;
     }
   }
 }
@@ -339,112 +445,6 @@
   }
 }
 
-
-//모달 리뷰
-.modal-review{
-  //display: block;
-  .modal-review-cont{
-    background-color: #fff;
-    width: 580px;
-    text-align: center;
-    border-radius: 20px;
-    position: relative;
-    padding-left: 40px;
-    padding-right: 14px;
-    padding-top: 20px;
-    padding-bottom: 46px;
-
-    .review-area{
-      margin-top: 34px;
-      height: 540px;
-      overflow: auto;
-      scrollbar-color: #fff #dfdfdf;
-      scrollbar-width: thin;
-      padding-right: 38px;
-      &::-webkit-scrollbar{
-        width: 10px;
-        //background-color: black;
-      }
-      &::-webkit-scrollbar-thumb{
-        border-radius: 4px;
-        background-color: #dfdfdf;
-      }
-      
-    }
-
-    .review-title{
-      color: #515151;
-      font-size: 35px;
-      font-weight: 500;
-      padding-right: 46px;
-    }
-    .img-area{
-      border-radius: 30px;
-      height: 268px;
-      overflow: hidden;
-      img{
-        width: 100%;
-      }
-    }
-    .review-text{
-      margin-top: 60px;
-      color: #4c4c4c;
-      line-height: 1.6;
-      text-align: left;
-      letter-spacing: -0.09em;
-    }
-
-    .bar{
-      background-color: #d8d8d8;
-      width: 91%;
-      height: 1px;
-      margin-top: 10px;
-    }
-
-    .rank-area{
-      padding-top: 18px;
-      margin-top: 28px;
-      display: flex;
-      .rank{
-        margin-left: 14px;
-        img{
-          margin: 0 1px;
-        }
-      }
-    }
-
-    .btn-close{
-      z-index: 1;
-      position: absolute;
-      background-color: #7e7e7e;
-      border-radius: 50%;
-      overflow: hidden;
-      width: 30px;
-      height: 30px;
-      display: inline-block;
-      top: 10px;
-      right: 10px;
-      &::after, &::before{
-        content: "";
-        position: absolute;
-        background-color: #fff;
-        width: 3px;
-        height: 18px;
-        border-radius: 1px;
-        top: 50%;
-        left: 50%;
-        //transform: rotate(45deg);
-      }
-  
-      &::after{
-        transform: translate(-50%,-50%) rotate(-45deg);
-      }
-      &::before{
-        transform: translate(-50%,-50%) rotate(45deg);
-      }
-    }
-  }
-}
 
 
 
@@ -673,83 +673,4 @@
     }
   }
 
-  .modal-review{
-    //display: block;
-    .modal-review-cont{
-      background-color: #fff;
-      width: 80%;      
-      border-radius: toRem(20);
-      
-      padding-left: toRem(40);
-      padding-right: toRem(14);
-      padding-top: toRem(42);
-      padding-bottom: toRem(46);
-  
-      .review-area{
-        margin-top: toRem(34);
-        height: 50vh;
-        padding-right: toRem(38);
-        &::-webkit-scrollbar{
-          width: toRem(10)
-          //background-color: black;
-        }
-        &::-webkit-scrollbar-thumb{
-          border-radius: toRem(5);
-        }
-        
-      }
-  
-      .review-title{
-        font-size: toRem(35);
-        padding-right: toRem(45);
-      }
-      .img-area{
-        border-radius: toRem(30);
-        height: toRem(268);
-      }
-      .review-text{
-        margin-top: toRem(60);
-        font-size: toRem(25);
-        line-height: 1.3;
-      }
-  
-      .bar{
-        margin-top: toRem(10);
-      }
-  
-      .rank-area{
-        padding-top: 0;
-        margin-top: toRem(25);        
-        align-items: center;
-        .name{
-          font-size: toRem(26);
-        }
-        .rank{
-          margin-left: toRem(14);
-          img{
-            margin: 0 1px;
-          }
-        }
-      }
-  
-      .btn-close{
-
-
-        width: toRem(42);
-        height: toRem(42);
-
-        top: toRem(12);
-        right: toRem(12);
-        &::after, &::before{
-          width: 3px;
-          height: toRem(28);
-          border-radius: 1px;
-          top: 50%;
-          left: 50%;
-          //transform: rotate(45deg);
-        }
-    
-      }
-    }
-  }
 }
