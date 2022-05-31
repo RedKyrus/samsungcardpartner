@@ -18,6 +18,10 @@
     .btn-read-more{
       color: #fff;
       border-color: #fff;
+      &:hover{
+        color: #000228;
+        background-color: #fff;
+      }
     }
     .add-tip{
       // color: #272727;
@@ -42,6 +46,10 @@
     .btn-read-more{
       color: #ffa510;
       border-color: #ffa510;
+      &:hover{
+        background-color: #ffa510;
+        color: #fff;
+      }
     }
     .add-tip{
       color: #272727;
