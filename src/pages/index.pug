@@ -128,10 +128,13 @@ block content
             +inputText("관심차종 1", "in-carype in-cartype01")
             +inputText("관심차종 2", "in-cartype02")
             +inputText("관심차종 3", "in-cartype03")
-
           button(class="btn-quote fn-open-modal-complete" type="button")
             p 견적
             p 요청하기
+          div(class="agree-area")
+            input(type="checkbox", id="check-agree-modal" class="check-agree")
+            label(for="check-agree-modal" class="check-agree-label") 개인정보수집동의
+            button(type="button" class="btn-show fn-open-modal-agree") 보기
       
     section(class="sect sect-release")
       div(class="sect-container")
@@ -212,7 +215,7 @@ block content
             div.tel-title
               div.icon
                 img(src=`${imgPath}/common/icon_consult.png`, alt="아이콘")
-              p.title 카이지 장기렌트카
+              p.title 장기렌트카 상담번호
             p.tel-cont TEL: 1533-3753 
               span (연중무휴상담신청)
             

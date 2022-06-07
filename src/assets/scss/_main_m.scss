@@ -182,10 +182,10 @@
   
 
   .consult-area{
-    margin-top: toRem(52);
+    margin-top: toRem(40);
     .consult-box{
       border-radius: toRem(10);
-      height: toRem(110);
+      height: toRem(100);
     }
     .consult-katalk{
       
@@ -209,18 +209,19 @@
         margin-right: toRem(14);
         .icon{
           margin-right: toRem(8);
+          img{
+            width: toRem(38);
+          }
         }
         .title{
-          
-          font-size: toRem(26);
-          
+          font-size: toRem(25);
         }
         
       }
   
       .tel-cont{
         
-        font-size: toRem(28);
+        font-size: toRem(26);
         
         span{
         
@@ -258,6 +259,7 @@
       
     }
     .in-info-area{
+      order: 1;
       width: 90%;
       margin: 0 auto;
       grid-template-rows: repeat(1, 1ft);
@@ -281,6 +283,7 @@
       }
     }
     .btn-quote{
+      order: 3;
       margin: 0 auto;
       margin-top: toRem(30);
       width: 90%;
@@ -305,6 +308,40 @@
         p{
           color: #fff;
         }
+      }
+    }
+    .agree-area{
+      order: 2;
+      width: 90%;
+      margin: 0 auto;
+      justify-content: left;
+      margin-top: toRem(30);
+      padding-left: toRem(12);
+      .check-agree{
+
+        &:checked+.check-agree-label::before{
+          font-size: toRem(34);
+        }
+      }
+      .check-agree-label{
+        //padding-top: toRem(2);
+        font-size: toRem(30);
+        line-height: 1.2;
+        &::before{
+          margin-right: toRem(8);
+          line-height: 1.3;
+          width: toRem(42);
+          height: toRem(42);
+        }
+      }
+
+      .btn-show{
+        margin-left: toRem(14);
+        width: toRem(88);
+        height: toRem(42);
+        font-size: toRem(28);
+        padding-top: toRem(8);
+        border-radius: toRem(10);
       }
     }
   }
