@@ -27,24 +27,6 @@ mixin inputTel(plaName, className)
   input(type="tel" class=className autocomplete='off' placeholder=plaName)
 
 
-mixin slideListRelease()
-  -for (let i= 0; i < 6; i++)
-    -let num= i+1;
-    if (num < 10)
-      -num= "0" + num
-    
-    a(class="swiper-slide info-box")
-      div.car-top
-        p.car-num #{num}
-        p.car-icon: img(src=`${imgPath}/main/icon_relese.png`, alt="아이콘")
-      div.img-area: img(src=`${imgPath}/car/car_relese01.png`, alt="자동차이미지")
-      div.car-info
-        p.car-name K5
-        p.car-deposit 보증금 30%
-          p.car-price 월42만원대
-        p.car-tip (세금/보험료 포함)
-        button(type="button" class="btn-quote") 견적신청하기
-
 mixin ReleaseInfobox(num, carName, price01=0, price02=0)
   if (num < 10)
     -num= "0" + num
@@ -81,7 +63,7 @@ mixin SpecialInfobox(num, carName, price01=0, price02=0, price03=0)
   
   a(class="swiper-slide info-box" href="#none")
     
-    p.car-top-icon: img(src=`${imgPath}/main/icon_special.png`, alt="아이콘")
+    div.car-top-icon: img(src=`${imgPath}/main/icon_special.png`, alt="아이콘")
     p.car-name #{carName}
     div.img-area.bg-white-box: img(src=`${imgPath}/car/car_relese${num}.png`, alt="자동차이미지")
     div.car-info
@@ -162,7 +144,8 @@ block content
     section(class="sect sect-common-ad")
         div(class="sect-container")
           a(class="ad-link" href="#none")
-            img(src=`${imgPath}/main/ad01.png`, alt="파트너사" class="mobile-hidden")
+            img(src=`${imgPath}/main/ad01.png`, alt="배너광고" class="mobile-hidden")
+            img(src=`${imgPath}/main/ad01_m.png`, alt="배너광고" class="pc-hidden")
 
     section(class="sect sect-special" )
       div(class="sect-container")
@@ -175,9 +158,11 @@ block content
     section(class="sect sect-common-ad")
         div(class="sect-container")
           a(class="ad-link" href="#none")
-            img(src=`${imgPath}/main/ad02.png`, alt="파트너사" class="mobile-hidden")
+            img(src=`${imgPath}/main/ad02.png`, alt="배너광고" class="mobile-hidden")
+            img(src=`${imgPath}/main/ad02_m.png`, alt="배너광고" class="pc-hidden")
           a(class="ad-link" href="#none")
-            img(src=`${imgPath}/main/ad03.png`, alt="파트너사" class="mobile-hidden")        
+            img(src=`${imgPath}/main/ad03.png`, alt="배너광고" class="mobile-hidden")
+            img(src=`${imgPath}/main/ad03_m.png`, alt="배너광고" class="pc-hidden")
 
     section(class="sect sect-youtube")
       div(class="sect-container")

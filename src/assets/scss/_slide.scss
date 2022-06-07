@@ -231,12 +231,12 @@
           }
         }
         .p-tip{
+          margin-top: 4px;
           color: #4c4c4c;
           font-size: 15px;
         }
       }
 
-      
 
       .car-price-ul{
         margin-top: 24px;
@@ -401,37 +401,48 @@
   
   .car-info-area{
     .info-box{
-
-      border-radius: toRem(30);
-      padding-top: toRem(18);
+      border-radius: toRem(10);
+      padding: 0 toRem(20);
+      padding-top: toRem(36);
       padding-bottom: toRem(20);
-  
-      .car-top{
-        padding:0 toRem(22);
-        .car-num{
-          font-size: toRem(40);
+
+      .car-top-icon{
+        position: absolute;
+        top: toRem(-22);
+        left: toRem(20);
+        img{
+          width: toRem(114);
         }
-        .car-icon{
-          img{
-            width: toRem(132);
-          }
-        }
+      }
+
+      .car-name{
+        font-size: toRem(30);
       }
   
       .car-info{
-        padding:0 toRem(22);
-
-        .car-name{
-          font-size: toRem(32);
+        .car-price-box{
+          margin-top: toRem(6);
+          border-radius: toRem(10);
+          padding-top: toRem(26);
+          padding-bottom: toRem(24);
+          padding-left: toRem(12);
+          .p-deposit{
+            font-size: toRem(30);
+          }
+          .p-price{
+            font-size: toRem(31);
+            margin-top: toRem(10);
+            .span-point{
+              font-size: toRem(52);
+            }
+          }
+          .p-tip{
+            margin-top: toRem(10);
+            font-size: toRem(20);
+          }
         }
-        // .car-deposit{
-        //   margin-top: toRem(8);
-        //   font-size: toRem(26);
-        // }
-        // .car-price{
-        //   margin-top: toRem(4);
-        //   font-size: toRem(38);
-        // }
+
+
 
         .car-price-ul{
           margin-top: toRem(14);
@@ -459,13 +470,14 @@
   
   
       .btn-quote{
-        font-size: toRem(32);
+        font-size: toRem(28);
         height: toRem(64);
-        border-radius: toRem(30);
+        border-radius: toRem(10);
         margin-top: toRem(20);
         display: flex;
         justify-content: center;
-        padding-top: toRem(13);
+        // padding-top: toRem(13);
+        align-items: center;
       }
     }
   }
