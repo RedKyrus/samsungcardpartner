@@ -1,0 +1,44 @@
+mixin modalFrameCar(modalName)
+  div.modal-wrap(class=`modal-car modal-${modalName}`)
+    div.modal-container
+      div.modal-content(class=`modal-${modalName}-cont`)
+        block
+
+mixin popCarInfoBox(carName,imgName, cancelPrice=0, price=0, link="#none")
+  li.ani-sty01: a(href=`${link}`) 
+    .img-area
+      img(src=`${imgPath}/car/${imgName}`, alt="이미지")
+      //- .img-box
+    .car-info-area 
+      p.car-name= carName
+      .car-price-box
+        p.price-cancel &nbsp;#{cancelPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}&nbsp;&nbsp;
+        p.price-main
+          | 월 
+          span.num #{price.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}
+          span.won 원~
+      .car-etc-box
+        p 48개월 
+        p.bar |
+        p 선수금 30%
+    .btn-detail 자세히 보기
+    
+
+
++modalFrameCar("car-release")
+  button(type="button" class="btn-close fn-close-modal ani-btn-sty01")
+  .title
+    p.title-main 로켓출고차량
+    p.title-sub 로켓 같이 빠르게!~ 놓칠 수 없는 기회~
+  ul.car-list-ul
+    +popCarInfoBox("아반떼","car_relese01.png",10000, 10000)
+    +popCarInfoBox("아반떼","car_relese01.png",20000, 20000)
+    +popCarInfoBox("아반떼","car_relese01.png",30000, 30000)
+    +popCarInfoBox("아반떼","car_relese01.png",40000, 40000)
+    +popCarInfoBox("아반떼","car_relese01.png",50000, 50000)
+    +popCarInfoBox("아반떼","car_relese01.png",40000, 40000)
+    //- +popCarInfoBox("아반떼","car_relese01.png")
+
+
+
++modalFrameCar("car-electro")

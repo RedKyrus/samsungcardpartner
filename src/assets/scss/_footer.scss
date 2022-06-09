@@ -119,7 +119,7 @@
           }
           *{
             color: #696969;
-            font-size: toRem(32);
+            font-size: toRem(25);
           }
         }
       }
@@ -143,13 +143,15 @@
   .copy-text-cont{
     padding-left: toRem(34);
     p{
-      font-size: toRem(22);
+      font-size: toRem(27);
+      line-height: 1.5;
     }
     .copyright{
       margin-top: toRem(14);
     }
     .company{
       font-size: toRem(28);
+      margin-bottom: 5px;
     }
   }
   

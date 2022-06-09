@@ -244,21 +244,23 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 2px 0;
+          padding: 3px 0;
           p{
-            color: $colorMainBlue;
+            
           }
           .p-type{
+            color: $colorMainBlack;
             font-family: 'NanumSquare', sans-serf;
             font-size: 20px;
             font-weight: 600;
             letter-spacing: -1.7px;
           }
           .p-price{
+            color: $colorMainBlue;
             font-family: "GmarketSans",sans-serif;
             font-size: 33px;
             font-weight: 700;
-            // letter-spacing: -2px;
+            // letter-spacing: -1.6px;
             .won{
               font-family: 'NanumSquare', sans-serf;
               font-weight: 500;
@@ -342,32 +344,32 @@
         width: 100%;
         padding-top: toRem(36);
         .title-sub{
-          font-size: toRem(20);
+          font-size: toRem(24);
         }
         .title-main{
-          margin-top: toRem(24);
+          margin-top: toRem(20);
           p{
             font-size: toRem(40);
           }
           .title02{
-            margin-top: toRem(8);
+            margin-top: toRem(6);
           }
         }
         .date{
-          font-size: toRem(20);
-          margin-top: toRem(20);
+          font-size: toRem(25);
+          margin-top: toRem(18);
         }
 
         .btn-read-more{
-          margin-top: toRem(30);
-          font-size: toRem(17);
+          margin-top: toRem(26);
+          font-size: toRem(24);
           border-radius: toRem(10);
-          height: toRem(52);
-          width: toRem(188);
+          height: toRem(58);
+          width: toRem(200);
         }
 
         .add-tip{
-          margin-top: toRem(32);
+          margin-top: toRem(30);
           font-size: toRem(18);
         }
 
@@ -403,15 +405,15 @@
     .info-box{
       border-radius: toRem(10);
       padding: 0 toRem(20);
-      padding-top: toRem(36);
+      padding-top: toRem(42);
       padding-bottom: toRem(20);
 
       .car-top-icon{
         position: absolute;
-        top: toRem(-22);
+        top: toRem(-38);
         left: toRem(20);
         img{
-          width: toRem(114);
+          width: toRem(164);
         }
       }
 
@@ -449,15 +451,21 @@
           li{
             padding: toRem(5) 0;
             &:not(:last-of-type){
-              border-bottom: 1px solid #5d8ac3;
+              // border-bottom: 1px solid #5d8ac3;
             }
             .p-type{
               font-size: toRem(20);
             }
             .p-price{
               
-              font-size: toRem(25);
+              font-size: toRem(26);
+
+              .won{
+                font-size: toRem(20);
+                margin-left: toRem(3);
+              }
             }
+            
           }
         }
 

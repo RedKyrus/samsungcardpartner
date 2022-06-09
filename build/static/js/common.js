@@ -8,6 +8,8 @@ window.addEventListener('DOMContentLoaded', () =>{
   modalOpenEvent("branch");
   modalOpenEvent("review");
   modalOpenEvent("terms");
+  modalOpenEvent("car-release");
+  modalOpenEvent("car-electro");
 
   modalCloseEvent();
 
