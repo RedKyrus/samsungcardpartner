@@ -62,6 +62,14 @@
       margin-top: 17px;
     }
   }
+  
+}
+
+.ani-ad-sty01{
+  transition: all 0.25s ease-out;
+  &:hover{
+    transform: scale(1.03);
+  }
 }
 
 .sect-intro{
