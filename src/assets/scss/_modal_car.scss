@@ -44,24 +44,25 @@
     margin: 0 auto;
     .title-main{
       color: $colorMainBlue;
-      font-size: 52px;
+      font-size: 48px;
       font-weight: 600;
     }
     .title-sub{
       margin-top: 10px;
       color: $colorMainBlack;
-      font-size: 30px;
+      font-size: 27px;
       font-weight: 500;
     }
   }
 
   .car-list-ul{
-    margin-top: 26px;
+    margin-top: 20px;
     display: flex;
     // flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    column-gap: 10px;
+    row-gap: 14px;
     li{
       background-color: #ececec;
       border-radius:  0 0 12px 12px;
@@ -70,12 +71,12 @@
         display: block;
       }
       .img-area{
-        height: 180px;
+        height: 150px;
         width: 260px;
         overflow: hidden;
         position: relative;
         // padding: 0 10px;
-        padding-top: 40px;
+        padding-top: 20px;
         img{
           // position: absolute;
           position: relative;
@@ -130,12 +131,14 @@
         .car-etc-box{
           display: flex;
           justify-content: center;
-          gap: 6px;
+          column-gap: 6px;
           background-color: #fff;
           width: 70%;
           margin: 0 auto;
           margin-top: 6px;
-          padding: 3px 10px;
+          padding: 0px 10px;
+          padding-top: 4px;
+          padding-bottom: 1px;
           border-radius: 12px;
           p{
             font-size: 17px;
@@ -211,8 +214,10 @@ $keyAngle: 52deg;
   .modal-car{
     .modal-content{
       width: 84%;
-      padding: toRem(36) 0;
+      padding-top: toRem(32);
+      padding-bottom: toRem(22);
       border-radius: toRem(15);
+      border: none;
     }
     .btn-close{
       width: toRem(46);
@@ -253,18 +258,20 @@ $keyAngle: 52deg;
       margin-top: toRem(26);
       gap: toRem(14);
       overflow-y: auto;
-      height: 82vw;
+      height: 72vw;
+      // background-color: red;
       li{
+        // mix-blend-mode: multiply;
         width: 44%;
         border-radius:  0 0 toRem(12) toRem(12);
         a{
           
         }
         .img-area{
-          height: toRem(180);
+          height: toRem(160);
           // width: toRem(260);
           width: 100%;
-          padding-top: toRem(40);
+          padding-top: toRem(24);
           img{
             width: 90%;
           }
@@ -325,6 +332,16 @@ $keyAngle: 52deg;
         }
       }
   
+    }
+    .bottom-arrow{
+      text-align: center;
+      margin: 0 auto;
+      margin-top: toRem(10);
+      img{
+        // width: 100%;
+        width: toRem(62);
+        opacity: 0.18;
+      }
     }
   }
 }
