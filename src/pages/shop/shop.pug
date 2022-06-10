@@ -19,28 +19,18 @@ block content
                 p 차종
                 p 카니발
               li 
-                p 출시연도
+                p 출시년도
                 p 2021
-
-            div(class="price-area")
-              div(class="price-box price-info")
-                p(class="p-title") 렌트
-                div(class="price-cont")
-                  p(class="p-price") 204,620<span class="won">원</span>
-                
-                //- div(class="price-cont")
-                //-   ul(class="price-info-ul")
-                //-     li
-                //-       p.name 선수금
-                //-       p.price 204,620<span class="won">원</span>
-                //-     li
-                //-       p.name 보조금
-                //-       p.price 400,520<span class="won">원</span>
-              
-              div(class="price-box price-lease btn-lease")
-                p(class="p-title") 리스
-                div(class="price-cont")
-                  p(class="p-price") 204,620<span class="won">원</span>
+              li.price-area
+                p.name 리스요금
+                p.price
+                  span.num 204,000
+                  span.won 원
+              li.price-area
+                p.name 렌트요금
+                p.price
+                  span.num 204,000
+                  span.won 원
 
             button(type="button" class="btn-car-quote fn-open-modal-quote") 빠른견적상담신청
 
@@ -50,4 +40,4 @@ block content
               p ※ 본 견적은 보증금 & 선수금이 적용된 월평균 납입 예상요금입니다.
 
               
-  include ../intro/_cont_intro
+  //- include ../intro/_cont_intro
