@@ -1,5 +1,5 @@
 .pc-bottom-wrap{
-  background-color: #110a3e;
+  background-color: $colorMainBlue;
   z-index: 20;
   position: fixed;
   bottom: 0;
@@ -25,23 +25,27 @@
     input{
       width: 127px;
       height: 34px;
-      margin-right: 22px;
+      margin-right: 18px;
       padding-left: 10px;
       font-size: 18px;
-      padding-bottom: 3px;
+      // padding-bottom: 3px;
+      color: #333;
       &::placeholder{
         color: #999;
       }
     }
+    .in-bottom-phone{
+      width: 150px;
+    }
     .in-bottom-cartype{
-      width: 200px;
+      width: 210px;
     }
 
   }
   
 
   .agree-area{
-    padding-left: 15px;
+    padding-left: 5px;
     text-align: left;
     display: flex;
     align-items: center;
@@ -53,8 +57,8 @@
         justify-content: center;
         background-color: #427abf;
         color: #fff;
-        font-size: 16px;
-        line-height: 1.2;
+        font-size: 17px;
+        line-height: 1.3;
       }
     }
     .check-agree-label{
@@ -100,6 +104,7 @@
   }
   .btn-car-quote{
     background-color: #ffef37;
+    // background-color: $colorMainBlack;
     border-radius: 23px;
     width: 148px;
     height: 47px;
