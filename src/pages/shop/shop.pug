@@ -1,7 +1,41 @@
 
 extends ../../template/layout_sub
 
+
+
+//- -let g_car_num = 0;
+
+
+mixin carInfoBox(carName,imgName, price=0, link="#none")
+  -let car_num;
+  -g_car_num++;
+  if(g_car_num < 10)
+    -car_num= "0" + g_car_num;
+
+  li.ani-sty01: a(href=`${link}`) 
+    .car-top  
+      p.car-num #{car_num}
+      div.car-top-icon: img(src=`${imgPath}/main/icon_special.png`, alt="아이콘")
+    .img-area
+      img(src=`${imgPath}/car/${imgName}`, alt="이미지")
+      //- .img-box
+    .car-info-area 
+      p.car-name= carName
+      .car-price-box
+        p.price-cancel &nbsp;#{(price*(1-0.1)).toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}&nbsp;&nbsp;
+        p.price-main
+          | 월 &nbsp;
+          span.num #{price.toString().replace(/\B(?=(\d{3})+(?!\d))/,",")}
+          span.won 원~
+      .car-etc-box
+        p 세금/보험료/방문정비 포함
+    .btn-detail 견적 신청하기
+
+
+  
 block content
+  -let g_car_num = 0;
+  
   main(class="wrap-container page-sub-product")
     section(class="sect product-sect-cont")
       div(class="sect-container")
@@ -51,9 +85,23 @@ block content
         div(class="sect-content")
           img(src=`${imgPath}/shop/shop_partner.jpg`, alt="이미지")
 
-    section(class="sect shop-sect-car")
+    section(class="sect shop-sect-car-event")
       div(class="sect-container")
-        div(class="sect-content")
+        div(class="shop-car-event-area")
+          .title
+            p.title-main 이벤트차량 특가
+            p.title-sub ※ 조건 : 계약 48개월 / 연간 2만km / 선수금 30% 
+          ul.car-list-ul
+            +carInfoBox("아반떼 리스","car_relese01.png", 125000)
+            +carInfoBox("아반떼","car_relese01.png", 120000)
+            +carInfoBox("아반떼","car_relese01.png", 310000)
+            +carInfoBox("아반떼","car_relese01.png", 42000)
+            +carInfoBox("아반떼","car_relese01.png", 52000)
+            +carInfoBox("아반떼","car_relese01.png", 46000)
+            //- +popCarInfoBox("아반떼","car_relese01.png")
+          
           
 
   //- include ../intro/_cont_intro
+
+    
