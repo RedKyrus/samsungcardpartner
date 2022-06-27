@@ -146,16 +146,16 @@
 }
 .shop-youtube-area{
   background-color: #d6d6d6;
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding-top: 55px;
+  padding-bottom: 60px;
   .youtube-box{
-    width: 774px;
+    width: 86%;
     margin: 0 auto;
     margin-top: 30px;
     // padding-top: 56.25%;
     position: relative;
     // padding-top: 56.25%;
-    padding-top: calc(774px * 0.5625);
+    padding-top: calc(86% * 0.5625);
   }
   .youtube-frame{
     // width: 100%;
@@ -445,7 +445,7 @@
       padding-top: calc(84% * 0.5625);
     }
     .youtube-frame{
-      position: absolute;
+      
     }
   }
 
