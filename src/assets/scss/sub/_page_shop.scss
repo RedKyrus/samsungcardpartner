@@ -410,12 +410,26 @@
       margin-top: toRem(30);
       gap: toRem(14);
       // background-color: red;
+      padding: 0 toRem(42);
       li{
         // mix-blend-mode: multiply;
         width: 48%;
         border-radius: toRem(12);
         a{
           
+        }
+        .car-top{
+          padding: 0 toRem(16);
+          padding-top: toRem(8);
+          .car-num{
+            font-size: toRem(48);
+          }
+          .car-top-icon{
+            padding-bottom: toRem(12);
+            img{
+              width: toRem(140);
+            }
+          }
         }
         .img-area{
           height: toRem(170);
@@ -457,7 +471,7 @@
             
             gap: toRem(8);
             
-            width: 78%;
+            width: 86%;
             
             margin-top: toRem(10);
             padding: toRem(3) toRem(10);
