@@ -404,10 +404,33 @@
       }
     }
   }
+
+  
+
+  .shop-sect-car-event{
+    .sect-container{
+      padding-top: toRem(80);
+      padding-bottom: toRem(110);
+    }
+    
+  }
+
   .shop-car-event-area{
+    .title{
+      p{
+      }
+      .title-main{
+        font-size: toRem(64);
+      }
+      .title-sub{
+        margin-top: toRem(20);
+        font-size: toRem(28);
+      }
+    }
+
     .car-list-ul{
       // width: 100%;
-      margin-top: toRem(30);
+      margin-top: toRem(40);
       gap: toRem(14);
       // background-color: red;
       padding: 0 toRem(42);
