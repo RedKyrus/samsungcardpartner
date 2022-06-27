@@ -141,6 +141,31 @@
   
 }
 
+.shop-sect-youtube{
+  
+}
+.shop-youtube-area{
+  background-color: #d6d6d6;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  .youtube-box{
+    width: 774px;
+    margin: 0 auto;
+    margin-top: 30px;
+    // padding-top: 56.25%;
+    position: relative;
+    // padding-top: 56.25%;
+    padding-top: calc(774px * 0.5625);
+  }
+  .youtube-frame{
+    // width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .shop-car-event-area{
   .title{
@@ -405,7 +430,24 @@
     }
   }
 
-  
+  .shop-youtube-area{
+    padding-top: toRem(55);
+    padding-bottom: toRem(60);
+    .title{
+      // width: 100%;
+      img{
+        width: 42%;
+      }
+    }
+    .youtube-box{
+      width: 84%;
+      margin-top: toRem(40);
+      padding-top: calc(84% * 0.5625);
+    }
+    .youtube-frame{
+      position: absolute;
+    }
+  }
 
   .shop-sect-car-event{
     .sect-container{
