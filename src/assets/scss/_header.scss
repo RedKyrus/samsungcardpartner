@@ -21,10 +21,10 @@
   .header-container{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 auto;
     width: $baseSectWithSize;
-    padding-top: 21px;
+    padding-top: 8px;
   }
 
 }
@@ -52,7 +52,7 @@ $searchBorderR: 40px;
     }
   }
   .search-cont{
-    border: 2px solid #feff84;
+    border: 2px solid #84f2ff;
     border-radius: $searchBorderR 0 0 $searchBorderR;
     overflow: hidden;
     display: flex;
@@ -114,7 +114,7 @@ $searchBorderR: 40px;
     width: 52px;
     flex-shrink: 0;
     flex-grow: 0;
-    background-color: #feff84;
+    background-color: #84f2ff;
     border-radius: 0 $searchBorderR $searchBorderR 0;
     img{
       width: fit-content;
@@ -140,7 +140,7 @@ $searchBorderR: 40px;
         font-weight: 600;
       }
       background-color: #fff;
-      border: 2px solid #feff84;
+      border: 2px solid #84f2ff;
       border-radius: 8px;
       width: 185px;
       padding-top: 12px;
@@ -159,7 +159,7 @@ $searchBorderR: 40px;
           content: "";
           width: 50px;
           height: 50px;
-          border: 2px solid #feff84;
+          border: 2px solid #84f2ff;
           background-color: #fff;
           transform: rotateZ(45deg);
           position: absolute;
@@ -253,14 +253,14 @@ $searchBorderR: 40px;
 .top-menu-content{
   display: flex;
   align-items: center;
-  padding-top: 10px;
+  // padding-top: 10px;
   .top-menu-ul{
     display: flex;
     justify-content: center;
     align-items: center;
     &>li{
       position: relative;
-      padding:0 62px;
+      padding:0 70px;
       &::after{
         position: absolute;
         content: "";
@@ -335,7 +335,7 @@ $searchBorderR: 40px;
       height: toRem(80);
     }
     .search-cont{
-      border: 3px solid #feff84;
+      border-width: 3px;
       border-radius: $searchBorderR 0 0 $searchBorderR;
       flex-grow: 1;
     }
@@ -357,7 +357,6 @@ $searchBorderR: 40px;
       // transform: translateX(2px);
       margin-left: -1px;
       width: toRem(80);
-      background-color: #feff84;
       border-radius: 0 $searchBorderR $searchBorderR 0;
 
       img{
