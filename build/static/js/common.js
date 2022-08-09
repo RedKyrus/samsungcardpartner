@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', () =>{
   modalOpenEvent("car-release");
   modalOpenEvent("car-electro");
   modalOpenEvent("pop-sunting");
+  modalOpenEvent("pop-porter-bongo", true);
 
   topBannerSetting();
 
@@ -32,12 +33,28 @@ window.addEventListener('load',()=>{
 
 
 
-let modalOpenEvent = (modalname) =>{
+// let modalOpenEvent = (modalname) =>{
+//   let btnOpenList = document.querySelectorAll(`.fn-open-modal-${modalname}`);
+//   let tagetModal = document.querySelector(`.modal-${modalname}`);
+  
+//   let openModal= () =>{
+//     tagetModal.classList.add("modal-show");
+//     document.body.classList.add("modal-open-scroll-stop")
+//     //console.log(modalname, "작동");
+//   }
+
+//   btnOpenList.forEach(btn =>{
+//     btn.addEventListener("click", openModal);
+//   });
+
+// }
+
+let modalOpenEvent = (modalname, startOpen=false) =>{
   let btnOpenList = document.querySelectorAll(`.fn-open-modal-${modalname}`);
-  let tagetModal = document.querySelector(`.modal-${modalname}`);
+  let targetModal = document.querySelector(`.modal-${modalname}`);
   
   let openModal= () =>{
-    tagetModal.classList.add("modal-show");
+    targetModal.classList.add("modal-show");
     document.body.classList.add("modal-open-scroll-stop")
     //console.log(modalname, "작동");
   }
@@ -46,13 +63,20 @@ let modalOpenEvent = (modalname) =>{
     btn.addEventListener("click", openModal);
   });
 
+  if(startOpen === true){
+    console.log(startOpen);
+    if(btnOpenList === null) return;
+    if(targetModal === null) return;
+    openModal();
+  }
+
 }
 
 
 let topBannerSetting = () =>{
   let topBanner = document.querySelector(`.outer-top-banner`);
   let closeTopBanner = document.querySelector(`.outer-top-banner .btn-close-banner`);
-  console.log(closeTopBanner);
+  // console.log(closeTopBanner);
 
   let closeBanner= () => {
     topBanner.style.display = "none";
